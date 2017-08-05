@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Engineering Database</title>
+</head>
+<body>
+	<h1>Engineering database:</h1>
+	<ol>
+
+	{% for post in posts %}
+	<li>
+		<h2>{{ post }}</h2>
+		<ul>
+			<li>Qualification: {{ post.qualification }}</li>
+			<li>Years of experience: {{ post.years }}</li>
+			<li>Work district: {{ post.district }}</li>
+			<li>No of data uploaded: {{ post.data_number }}</li>
+		</ul>
+	</li>
+	{% endfor %}
+	</ol>
+</body>
+</html>
